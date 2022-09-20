@@ -13,12 +13,12 @@
     <div class="container my-4">
         <h1 class="my-4 text-center">CatChat</h1>
         <!-- buttons for chatrooms -->
-        <div class="chatrooms mb3 text-center">
+        <div class="chat-rooms mb-3 text-center">
             <div class="my-2">Choose a chatroom:</div>
             <button class="btn" id="general">#general</button>
             <button class="btn" id="gaming">#gaming</button>
             <button class="btn" id="music">#music</button>
-            <button class="btn" id="cats">#cats</button>
+            <button class="btn" id="ninjas">#cats</button>
         </div>
         <!-- chat list / window -->
         <div class="chat-window">
@@ -27,8 +27,8 @@
         <!-- new chat form -->
         <form class="new-chat my-3">
             <div class="input-group">
-                <div class="input-group-prepent">
-                    <div class="input-group-text">Your Message:</div>
+                <div class="input-group-prepend">
+                    <div class="input-group-text">Your message:</div>
                 </div>
                 <input type="text" id="message" class="form-control" required>
                 <div class="input-group-append">
@@ -49,8 +49,9 @@
             </div>
             <div class="update-mssg"></div>
         </form>
-        </div>
     </div>
+
+    <script src="http://cdn.date-fns.org/v1.9.0/date_fns.min.js"></script>
     <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase-firestore.js"></script>
     <script>
